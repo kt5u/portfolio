@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfólio — Seu Nome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Portfólio digital de [Seu Nome] — competências académicas e profissionais, projetos e atividades.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Seu Nome</a>
+      <nav class="nav" id="primary-nav">
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Competências</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#activities">Atividades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a class="cv-btn" href="files/CV_Europass.pdf" target="_blank" rel="noopener">Ver CV (PDF)</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section id="hero" class="hero container">
+      <div class="hero-grid">
+        <div>
+          <h1>Olá — sou <span class="accent">Seu Nome</span></h1>
+          <p class="lead">Resumo curto: estudante/profissional em [Área] com experiência em [x], interessado em [y].</p>
+          <p>
+            <a class="primary" href="#projects">Ver projetos</a>
+            <a class="ghost" href="files/CV_Europass.pdf" target="_blank" rel="noopener">Baixar CV</a>
+          </p>
+        </div>
+        <div class="hero-photo" aria-hidden="true">
+          <!-- Substitua pela sua foto -->
+          <img src="images/profile-placeholder.png" alt="Foto de [Seu Nome]">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>Sobre</h2>
+      <p>Descrição expandida (não copiar o CV): trajectória académica, áreas de interesse, objetivo profissional. Fale também de soft-skills e como as desenvolve (ex.: trabalho em equipa, comunicação, organização).</p>
+      <ul class="meta">
+        <li><strong>Formação:</strong> Licenciatura/Mestrado em [Curso], [Instituição] — ano</li>
+        <li><strong>Idioma:</strong> Português (Nativo), Inglês (B2)</li>
+        <li><strong>Localização:</strong> Cidade, País (opcional)</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h2>Competências</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Competências técnicas</h3>
+          <ul>
+            <li>Ex.: HTML, CSS, JavaScript</li>
+            <li>Ex.: Python, SQL</li>
+            <li>Ex.: Ferramentas: Git, Docker</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Competências profissionais / experiência</h3>
+          <ul>
+            <li>Estágio em [empresa] — descr. breve</li>
+            <li>Projeto freelance/voluntário — descr. breve</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Soft skills & interesses</h3>
+          <ul>
+            <li>Comunicação, resolução de problemas, liderança</li>
+            <li>Hobbies: fotografia, voluntariado, desporto</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Projetos</h2>
+      <p class="muted">Catálogo de projetos — cada projeto inclui objetivos, tecnologias e o seu papel.</p>
+
+      <div class="projects-controls">
+        <label>Filtrar:
+          <select id="project-filter" aria-label="Filtrar projetos">
+            <option value="all">Todos</option>
+            <option value="web">Web</option>
+            <option value="data">Data</option>
+            <option value="volunteer">Voluntariado</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Projeto exemplo 1 -->
+        <article class="project" data-tags="web">
+          <img src="images/project-1.png" alt="Screenshot do Projeto 1">
+          <h3>Projeto 1 — Título</h3>
+          <p class="project-role">Descrição curta — objetivo e impacto.</p>
+          <p class="project-meta"><strong>Tecnologias:</strong> HTML, CSS, JS</p>
+          <p><a href="#" class="project-more" data-id="p1">Ver detalhes</a></p>
+        </article>
+
+        <!-- Projeto exemplo 2 -->
+        <article class="project" data-tags="data">
+          <img src="images/project-2.png" alt="Screenshot do Projeto 2">
+          <h3>Projeto 2 — Título</h3>
+          <p class="project-role">Descrição curta — objetivo e impacto.</p>
+          <p class="project-meta"><strong>Tecnologias:</strong> Python, Pandas</p>
+          <p><a href="#" class="project-more" data-id="p2">Ver detalhes</a></p>
+        </article>
+
+        <!-- Adicione mais projetos aqui -->
+      </div>
+    </section>
+
+    <section id="activities" class="container activities">
+      <h2>Atividades e envolvimento</h2>
+      <ul>
+        <li><strong>Voluntariado:</strong> Organização X — breve descrição (impacto, responsabilidades).</li>
+        <li><strong>Atividades extracurriculares:</strong> Clube Y, equipa de desporto, música.</li>
+        <li><strong>Certificados:</strong> [Nome do certificado] — ano.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contacto</h2>
+      <p>Endereço de email: <a href="mailto:seu.email@exemplo.com">seu.email@exemplo.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/seuperfil" target="_blank" rel="noopener">linkedin.com/in/seuperfil</a></p>
+      <p>GitHub: <a href="https://github.com/seuperfil" target="_blank" rel="noopener">github.com/seuperfil</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Seu Nome — Portfólio digital. <a href="files/CV_Europass.pdf" target="_blank" rel="noopener">CV (PDF)</a></p>
+    </div>
+  </footer>
+
+  <!-- Modal de projeto (dinâmico) -->
+  <div id="project-modal" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Fechar">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
