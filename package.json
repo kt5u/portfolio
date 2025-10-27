@@ -1,6 +1,6 @@
 {
       "name": "kt5u-github-io",
-      "homepage": "https://kt5u.github.io/portfolio",
+      "homepage": "https://kt5u.github.io/portfolio/",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -57,7 +57,9 @@
       "scripts": {
             "dev": "vite",
             "build": "vite build",
+            "postbuild": "cp build/index.html build/404.html",
+            "preview": "vite preview --strictPort --port 4173",
             "predeploy": "npm run build",
-            "deploy": "gh-pages -d build"
+            "deploy": "gh-pages -d build -b gh-pages"
       }
 }

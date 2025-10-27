@@ -4,6 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
+    base: '/portfolio/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -56,5 +57,5 @@
     server: {
       port: 3000,
       open: true,
-    },
+    }
   });
